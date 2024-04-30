@@ -1,0 +1,22 @@
+.promo {
+  background-color: var(--bg);
+  min-height: 100vh;
+  padding: 32px;
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 32px;
+  }
+  &__right, &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .promo {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+  }
+}
