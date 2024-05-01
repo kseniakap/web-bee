@@ -1,0 +1,39 @@
+.map {
+  width: 100%;
+  min-height: 200px;
+  padding: 0 35px 35px 35px;
+  background-color: var(--white);
+  position: relative;
+  &__top {
+    padding: 18px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    h2 {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    div{
+        display: flex;
+        gap: 8px;
+        img{
+            width:16px;
+            height: 16px;
+            object-fit: contain;
+        }
+    }
+  }
+  &__block {
+    width: 100%;
+    height: 480px;
+  }
+  > img {
+    display: block;
+    height: 124px;
+    width: 124px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

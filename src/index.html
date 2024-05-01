@@ -138,33 +138,7 @@
     </div>
     <!-- content -->
     <div class="content" id="content"></div>
-    <script>
-      function loadData(filename) {
-        let xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-        if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("content").innerHTML = this.responseText;
-            history.pushState({filename: filename}, "Page " + filename, "?file=" + filename);
-            
-            document.querySelectorAll(".links a").forEach(link => {
-                link.classList.remove("active");
-            });
-            
-            document.getElementById("link" + filename[1]).classList.add("active");
-          }
-        };
-        xhr.open("GET", filename, true);
-        xhr.send();
-      }
-    
-      window.onpopstate = function(event) {
-          if (event.state) {
-          loadData(event.state.filename);
-          }
-      };
-    
-      // Вызываем загрузку первой страницы при загрузке страницы
-      loadData('01.html');
-    </script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
