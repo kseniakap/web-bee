@@ -1,5 +1,4 @@
 .profile {
-  width: 264px;
   min-height: 296px;
   padding: 32px 50px;
   background-color: var(--white);
@@ -32,9 +31,17 @@
       height: 20px;
       object-fit: contain;
       cursor: pointer;
+      transition: var(--transition);
+      &:hover{
+        border: 2px solid red;
+      }
     }
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+  .profile > img{
+    width: 100%;
+    height: auto;
+  }
 }

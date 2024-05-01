@@ -1,5 +1,5 @@
 .post {
-  width: 1080px;
+  width: 100%;
   height: 672px;
   background-color: var(--white);
   padding: 56px 32px 32px 32px;
@@ -79,7 +79,6 @@
   }
   &__closed {
     padding: 19px 32px;
-    width: 1080px;
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -111,11 +110,23 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
   .post {
-    width: 50%;
+    height: auto;
     img {
-      height: 224px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .post {
+    &__closed {
+      flex-wrap: wrap;
+      div {
+        margin-left: 25px;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
   }
 }

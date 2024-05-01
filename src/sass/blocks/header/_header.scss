@@ -50,3 +50,13 @@
 .links a.active {
   background-color: var(--bg);
 }
+@media (max-width:993px){
+  .header__bottom nav{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px){
+  .header__top,.header__list,  .header__bottom nav ul {
+    flex-wrap: wrap;
+  }
+}

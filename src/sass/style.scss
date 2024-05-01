@@ -20,7 +20,7 @@
   --bg: #f1f1f1;
   --white: #ffffff;
   --bg2: #fafafa;
-  --transition: all .3s ease-in;
+  --transition: all .2s ease-in;
 }
 
 .container {
@@ -35,7 +35,7 @@
 @import "blocks/profile/profile";
 @import "blocks/post/post";
 @import "blocks/navigation/navigation";
-@import "blocks/map/map";
+@import "blocks/block/block";
 
 //media container
 @media (max-width: 1400px) {
