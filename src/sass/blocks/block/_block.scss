@@ -10,12 +10,18 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
+    i {
+      font-size: 20px;
+   
+    }
+
     h2 {
       font-weight: 400;
       font-size: 16px;
     }
     div {
       display: flex;
+      align-items: center;
       gap: 8px;
       img {
         width: 16px;
@@ -38,19 +44,28 @@
     transform: translate(-50%, -50%);
   }
 }
+.preload {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
 @media (max-width: 768px) {
-  .block__map{
+  .block__map {
     height: 300px;
+  }
+  .preload {
+    height: 80px !important;
+    width: 80px !important;
   }
 }
 
-@media (max-width: 576px){
-  .block{
+@media (max-width: 576px) {
+  .block {
     padding: 0 15px 10px 15px;
-    &__top{
+    &__top {
       padding: 8px 0;
     }
-    &__map{
+    &__map {
       height: 250px;
     }
   }

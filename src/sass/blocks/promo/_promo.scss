@@ -20,13 +20,15 @@
     gap: 32px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .promo {
     &__wrapper {
       flex-wrap: wrap;
+      margin-bottom: 10px;
     }
     &__right {
-      & > div {
+      .profile,
+      .navigation {
         width: 48%;
       }
       order: 1;
@@ -40,12 +42,20 @@
       order: 2;
     }
   }
+  .share {
+    width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .promo{
+    padding: 15px 0;
+  }
 }
 @media (max-width: 576px) {
   .promo {
- 
     &__right {
-      & > div {
+      .profile,
+      .navigation {
         width: 100%;
       }
     }

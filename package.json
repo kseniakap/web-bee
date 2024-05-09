@@ -80,6 +80,7 @@
     "binary-extensions": "^2.2.0",
     "bl": "^1.2.3",
     "boolbase": "^1.0.0",
+    "bootstrap-icons": "^1.11.3",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
     "browser-sync-client": "^2.27.11",

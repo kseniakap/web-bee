@@ -1,5 +1,4 @@
 .navigation {
-
   &__top {
     height: 38px;
     background-color: var(--white);
@@ -44,7 +43,7 @@
         &:hover {
           background-color: var(--bg);
         }
-        &:hover span  {
+        &:hover span {
           font-weight: 600;
         }
         p {
@@ -56,10 +55,9 @@
           font-weight: 400;
           font-size: 14px;
         }
-        img {
-          height: 20px;
-          width: 20px;
+        i {
           margin-right: 16px;
+          font-size: 20px;
         }
         &:nth-last-child(1) {
           margin-bottom: 0;
@@ -124,10 +122,5 @@
         background-color: var(--grey);
       }
     }
-  }
-}
-@media (max-width: 576px){
-  .share{
-    width: 100%;
   }
 }
