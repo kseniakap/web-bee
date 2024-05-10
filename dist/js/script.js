@@ -71,15 +71,17 @@ document.addEventListener("DOMContentLoaded", function () {
         minutes = Math.floor((elapsedTime / 1000 / 60) % 60),
         seconds = Math.floor((elapsedTime / 1000) % 60);
 
-      document.getElementById("timer").innerText =
-        (hours < 10 ? "0" : "") +
-        hours +
-        ":" +
-        (minutes < 10 ? "0" : "") +
-        minutes +
-        ":" +
-        (seconds < 10 ? "0" : "") +
-        seconds;
+      if (document.getElementById("timer")) {
+        document.getElementById("timer").innerText =
+          (hours < 10 ? "0" : "") +
+          hours +
+          ":" +
+          (minutes < 10 ? "0" : "") +
+          minutes +
+          ":" +
+          (seconds < 10 ? "0" : "") +
+          seconds;
+      }
     }, 1000);
   }
 
