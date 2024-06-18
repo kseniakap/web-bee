@@ -7,6 +7,7 @@ const cleanCSS = require("gulp-clean-css");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const ghPages = require("gulp-gh-pages");
+
 // Static server
 gulp.task("server", function () {
   browserSync.init({

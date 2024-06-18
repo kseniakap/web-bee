@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json">
     <title>Тестовое задание WebBee</title>
     <meta name="title" content="Тестовое заданеи" />
     <meta name="description" content="Тестовое задание от компании WebBee" />
-    <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.scss" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <!--Скрипты для работы с картой -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=b5769b42-1d2a-4d70-9b42-7fad7d7bba00" ></script>
+
 </head>
-<body>
+  <body>
      <!-- header -->
      <header class="header">
       <div class="container">
         <div class="header__top">
           <div class="header__breadcrumb">
-            <img src="./icons/header/arrow-left.svg" alt="стрелка влево">
+            <i class="bi bi-arrow-90deg-left"></i> 
             <a href="#">
               <span>User Pages</span>
               <span>-</span>
@@ -31,28 +40,19 @@
           <ul class="header__list">
             <li >
               <a href="" class="active">
-                <img
-                  src="./icons/header/statictics.svg "
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-reception-3" ></i>
                 <span>Statictics</span>
               </a>
             </li>
             <li>
               <a href="">
-                <img
-                  src="./icons/header/invoices.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-ui-checks-grid"></i>
                 <span>Invoices</span>
               </a>
             </li>
             <li>
               <a href="">
-                <img
-                  src="./icons/header/schedule.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-receipt-cutoff"></i>
                 <span>Schedule</span>
               </a>
             </li>
@@ -66,28 +66,19 @@
           <ul>
             <li class="links" >
               <a href="#" onclick="loadData('01.html')" id="link1">
-                <img
-                  src="./icons/header/activity-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-list"></i>
                 <span>Activity</span>
               </a>
             </li>
             <li class="links">
               <a href="#" onclick="loadData('02.html')" id="link2">
-                <img
-                  src="./icons/header/map-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-geo-alt"></i>
                 <span>Map</span>
               </a>
             </li>
             <li class="links">
               <a href="#" onclick="loadData('03.html')" id="link3">
-                <img
-                  src="./icons/header/time-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-clock"></i>
                 <span>Time</span>
               </a>
             </li>
@@ -95,41 +86,26 @@
           <ul>
             <li>
               <a href="#">
-                <img
-                  src="./icons/header/notes-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-gear"></i>
                 <span>Notes</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="./icons/header/friend-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-people"></i>
                 <span>Friends</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="./icons/header/photo-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-images"></i>
                 <span>Photos</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="./icons/header/setting-icon.svg"
-                  alt="иконка у ссылки"
-                />
-                <img
-                  src="./icons/header/arrowdown-icon.svg"
-                  alt="иконка у ссылки"
-                />
+                <i class="bi bi-gear"></i>
+                <i class="bi bi-chevron-down" class="arrow-down"></i>
               </a>
             </li>
           </ul>
@@ -138,7 +114,11 @@
     </div>
     <!-- content -->
     <div class="content" id="content"></div>
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <script src="js/script.js"></script>
-</body>
+
+    <!-- scripts -->
+    <!-- в случае разбияния кода на несколько скриптов -->
+    <!-- <script type="module" src="js/script.js"></script> -->
+
+    <script  src="js/main.js"></script>
+  </body>
 </html>
